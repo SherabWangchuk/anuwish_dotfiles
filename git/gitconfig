@@ -1,6 +1,6 @@
 [user]
-    name  = Julian Wishahi
-    email = julian.wishahi@tu-dortmund.de
+	name = Moritz Demmer
+	email = moritz.demmer@cern.ch
 
 [push]
     default = matching

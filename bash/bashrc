@@ -9,5 +9,9 @@ fi
 
 [ -n "$PS1" ] && source ~/.bash_profile
 
+if [ -f ~/.alases ]; then
+  . ~/.aliases
+fi
+
 
 

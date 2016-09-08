@@ -38,6 +38,8 @@ set enc=utf-8
 set number
 set ruler
 
+" share copy/paste etc. buffer with OS
+set clipboard=unnamed
 
 " Wildmenu
 set wildmenu
@@ -59,9 +61,10 @@ set smartcase
 
 " Colours
 syntax enable
-"colorscheme tomorrow-night
-colorscheme tomorrow
-
+colorscheme tomorrow-night
+"colorscheme tomorrow
+"set background=light
+"colorscheme solarized
 
 " Options for {G,M}VIM
 if has("gui_running")
