@@ -45,5 +45,18 @@ alias hidedotfiles="defaults write com.apple.finder AppleShowAllFiles -bool fals
 # resume scp
 alias scpresume='rsync --partial --progress --rsh=ssh'
 
+#LHCb Software etc
+alias lhcbSetup='source /lhcbsoft/LHCbSoftwareSetup.sh'
+
+alias spr='SetupProject ROOT'
+alias spb='SetupProject Brunel'
+alias spd='SetupProject DaVinci'
+alias spg='SetupProject Gauss'
+alias spgg='SetupProject Ganga'
+
+alias py2root5='source /opt/rh/miniconda/scripts/py2root5.sh'
+alias py2root6='source /opt/rh/miniconda/scripts/py2root6.sh'
+alias py3root6='source /opt/rh/miniconda/scripts/py3root6.sh && cd /opt/rh/miniconda/envs/py3root6/bin/ && source thisroot.sh'
+
 # ROOT stuff
 #alias root='/Applications/root/bin/root.exe'
