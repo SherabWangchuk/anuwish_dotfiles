@@ -114,13 +114,13 @@ export PYTHONSTARTUP=$HOME/.pythonrc.py
 alias scpresume='rsync --partial --progress --rsh=ssh'
 
 # Added by Anaconda4 installer
-#export PATH="/Users/mdemmer/anaconda3/bin:$PATH"
+export PATH="/Users/mdemmer/anaconda3/bin:$PATH"
 
 # iTerm2 SHELL integration
-#source ~/.iterm2_shell_integration.`basename $SHELL`
+source ~/.iterm2_shell_integration.`basename $SHELL`
 
 # Mount commands
-#mounthome() { sshfs $1:/home/mdemmer ~/MountPoints/$1-home -o auto_cache,reconnect,volname=$1-home,no_readahead,noappledouble,nolocalcaches,follow_symlinks }
-#umounthome() { umount ~/MountPoints/$1-home }
+mounthome() { sshfs $1:/home/mdemmer ~/MountPoints/$1-home -o auto_cache,reconnect,volname=$1-home,no_readahead,noappledouble,nolocalcaches,follow_symlinks }
+umounthome() { umount ~/MountPoints/$1-home }
 #alias setROOT5="pushd $(brew --prefix root) >/dev/null; . libexec/thisroot.sh; popd >/dev/null"
 #alias setROOT6="pushd $(brew --prefix root6) >/dev/null; . libexec/thisroot.sh; popd >/dev/null"

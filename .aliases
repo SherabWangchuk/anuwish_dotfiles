@@ -1,16 +1,27 @@
 # Allow aliases to be with sudo
 #alias sudo="sudo "
 
+#git:
+alias gpupu='git pull && git push'
+alias gstat='git status'
+alias gcom='git commit -m '
+alias gadd='git add ' 
+
 #CERN Kerberos Init
 alias mykinit='kinit -l 7d mdemmer@CERN.CH'
 
 #conda envs:
 alias p8zep='source activate zeppelin'
+alias root6py2='source activate root6py2'
+alias root6py3='source activate root6py3'
+
 
 #special sshfs mounts
 alias mountlxplus='sshfs lxplus:/afs/cern.ch/user/m/mdemmer ~/MountPoints/lxplus-home -o auto_cache,reconnect,volname=lxplus-home,no_readahead,noappledouble,nolocalcaches,follow_symlinks'
 
 alias mounteve='sshfs eve:~ ~/MountPoints/eve2-home -o auto_cache,reconnect,volname=eve2-home,no_readahead,noappledouble,nolocalcaches,follow_symlinks'
+
+alias mountfhgfs='sshfs eve:/fhgfs ~/MountPoints/fhgfs -o auto_cache,reconnect,volname=FhGFS,no_readahead,noappledouble,nolocalcaches,follow_symlinks'
 
 
 # Easier navigation: .., ..., ~ and -
@@ -43,6 +54,8 @@ alias lat="ls -AGFoth"
 # add standard options to command
 alias mkdir="mkdir -vp"
 
+# print out $PATH
+#alias path ="echo -e ${PATH//:/\\n}"
 
 # Concatenate and print content of files (add line numbers)
 alias catn="cat -n"
