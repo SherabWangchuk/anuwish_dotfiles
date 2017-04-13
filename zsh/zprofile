@@ -32,6 +32,8 @@ if [[ "$OSTYPE" == darwin* ]]; then
   export BROWSER='open'
 fi
 
+# Load all ssh-keys
+ssh-add -A &>/dev/null
 
 # Editors
 export EDITOR='vim'
