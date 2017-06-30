@@ -2,6 +2,7 @@
 #alias sudo="sudo "
 
 #git:
+alias gpull='git pull'
 alias gpupu='git pull && git push'
 alias gstat='git status'
 alias gcom='git commit -m '
