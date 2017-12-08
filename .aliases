@@ -1,6 +1,11 @@
 # Allow aliases to be with sudo
 #alias sudo="sudo "
 
+# Tunnelled access to lbgw:
+alias lbtun='ssh -N -f -q lbtun'
+alias lbtunkill="for i in \`ps auxww | grep lbtun | grep -v grep | awk '{print \$2}'\`; do echo killing \$i; kill \$i; done"
+
+
 #git:
 alias gpull='git pull'
 alias gpupu='git pull && git push'
